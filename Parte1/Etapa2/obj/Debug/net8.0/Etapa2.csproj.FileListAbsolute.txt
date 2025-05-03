@@ -1,0 +1,16 @@
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\obj\Debug\net8.0\Etapa2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\obj\Debug\net8.0\Etapa2.csproj.CoreCompileInputs.cache
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\obj\Debug\net8.0\Etapa2.sourcelink.json
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\bin\Debug\net8.0\Etapa2.exe
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\bin\Debug\net8.0\Etapa2.deps.json
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\bin\Debug\net8.0\Etapa2.runtimeconfig.json
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\bin\Debug\net8.0\Etapa2.dll
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\bin\Debug\net8.0\Etapa2.pdb
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\obj\Debug\net8.0\Etapa2.csproj.AssemblyReference.cache
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\obj\Debug\net8.0\Etapa2.csproj.Up2Date
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\obj\Debug\net8.0\Etapa2.dll
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\obj\Debug\net8.0\refint\Etapa2.dll
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\obj\Debug\net8.0\Etapa2.pdb
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\obj\Debug\net8.0\Etapa2.genruntimeconfig.cache
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\Etapa2\obj\Debug\net8.0\ref\Etapa2.dll
