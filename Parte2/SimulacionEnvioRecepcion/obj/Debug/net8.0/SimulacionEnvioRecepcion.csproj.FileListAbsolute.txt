@@ -1,0 +1,4 @@
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte2\SimulacionEnvioRecepcion\obj\Debug\net8.0\SimulacionEnvioRecepcion.csproj.AssemblyReference.cache
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte2\SimulacionEnvioRecepcion\obj\Debug\net8.0\SimulacionEnvioRecepcion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte2\SimulacionEnvioRecepcion\obj\Debug\net8.0\SimulacionEnvioRecepcion.csproj.CoreCompileInputs.cache
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte2\SimulacionEnvioRecepcion\obj\Debug\net8.0\SimulacionEnvioRecepcion.sourcelink.json
