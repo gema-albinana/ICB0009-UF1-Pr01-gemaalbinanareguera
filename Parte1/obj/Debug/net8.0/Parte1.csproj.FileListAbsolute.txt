@@ -1,0 +1,13 @@
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\bin\Debug\net8.0\Parte1.exe
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\bin\Debug\net8.0\Parte1.deps.json
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\bin\Debug\net8.0\Parte1.runtimeconfig.json
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\bin\Debug\net8.0\Parte1.dll
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\bin\Debug\net8.0\Parte1.pdb
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\obj\Debug\net8.0\Parte1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\obj\Debug\net8.0\Parte1.csproj.CoreCompileInputs.cache
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\obj\Debug\net8.0\Parte1.sourcelink.json
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\obj\Debug\net8.0\Parte1.dll
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\obj\Debug\net8.0\refint\Parte1.dll
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\obj\Debug\net8.0\Parte1.pdb
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\obj\Debug\net8.0\Parte1.genruntimeconfig.cache
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\obj\Debug\net8.0\ref\Parte1.dll
