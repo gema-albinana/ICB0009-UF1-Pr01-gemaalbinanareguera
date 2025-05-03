@@ -1,0 +1,10 @@
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\ClaveSimetricaClass\bin\Debug\net8.0\ClaveSimetricaClass.deps.json
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\ClaveSimetricaClass\bin\Debug\net8.0\ClaveSimetricaClass.dll
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\ClaveSimetricaClass\bin\Debug\net8.0\ClaveSimetricaClass.pdb
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\ClaveSimetricaClass\obj\Debug\net8.0\ClaveSimetricaClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\ClaveSimetricaClass\obj\Debug\net8.0\ClaveSimetricaClass.csproj.CoreCompileInputs.cache
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\ClaveSimetricaClass\obj\Debug\net8.0\ClaveSimetricaClass.sourcelink.json
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\ClaveSimetricaClass\obj\Debug\net8.0\ClaveSimetricaClass.dll
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\ClaveSimetricaClass\obj\Debug\net8.0\refint\ClaveSimetricaClass.dll
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\ClaveSimetricaClass\obj\Debug\net8.0\ClaveSimetricaClass.pdb
+C:\Users\Khayman\Desktop\DAM M09\uf1\practica\ICB0009-UF1-Pr01-gemaalbinanareguera\Parte1\ClaveSimetricaClass\obj\Debug\net8.0\ref\ClaveSimetricaClass.dll
