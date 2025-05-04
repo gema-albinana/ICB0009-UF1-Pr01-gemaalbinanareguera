@@ -58,7 +58,8 @@ namespace SimuladorEnvioRecepcion
             Firma = Emisor.FirmarMensaje(TextoAEnviar_Bytes);
 
             // 2️⃣ Cifrar mensaje con clave simétrica
-            TextoCifrado = ClaveSimetricaEmisor.CifrarMensaje(TextoAEnviar_Bytes);
+            //TextoCifrado = ClaveSimetricaEmisor.CifrarMensaje(TextoAEnviar_Bytes); // ----------------------------------------------------------
+            TextoCifrado = ClaveSimetricaEmisor.CifrarMensaje(BytesToStringHex(TextoAEnviar_Bytes));
 
             // 3️⃣ Cifrar clave simétrica con criptografía asimétrica
             ClaveSimetricaKeyCifrada = Emisor.CifrarMensaje(ClaveSimetricaEmisor.Key);
@@ -74,13 +75,21 @@ namespace SimuladorEnvioRecepcion
             Console.WriteLine("\n📥 **Recepción del mensaje cifrado y proceso de descifrado**");
 
             // 4️⃣ Descifrar clave simétrica
-            ClaveSimetricaReceptor.Key = Receptor.DescifrarMensaje(ClaveSimetricaKeyCifrada);
-            ClaveSimetricaReceptor.IV = Receptor.DescifrarMensaje(ClaveSimetricaIVCifrada);
+            Console.WriteLine("antes de key");
+            //ClaveSimetricaReceptor.Key = Receptor.DescifrarMensaje(ClaveSimetricaKeyCifrada); // ----------------------------------------------------------
+            ClaveSimetricaReceptor.Key = Emisor.DescifrarMensaje(ClaveSimetricaKeyCifrada);
+            Console.WriteLine("despues de key y antes de IV");
+            //ClaveSimetricaReceptor.IV = Receptor.DescifrarMensaje(ClaveSimetricaIVCifrada); // ----------------------------------------------------------
+            ClaveSimetricaReceptor.IV = Emisor.DescifrarMensaje(ClaveSimetricaIVCifrada);
+            Console.WriteLine("despues de IV");
 
             // 5️⃣ Descifrar mensaje
-            byte[] MensajeDescifrado = ClaveSimetricaReceptor.DescifrarMensaje(TextoCifrado);
+            //byte[] MensajeDescifrado = ClaveSimetricaReceptor.DescifrarMensaje(TextoCifrado); // ----------------------------------------------------------
+            Console.WriteLine("antes de byte MensajeDescifrado");
+            byte[] MensajeDescifrado = Encoding.UTF8.GetBytes(ClaveSimetricaReceptor.DescifrarMensaje(TextoCifrado));
+            Console.WriteLine("despues de de byte MensajeDescifrado y antes de MensajeFinal");
             string MensajeFinal = Encoding.UTF8.GetString(MensajeDescifrado);
-
+            Console.WriteLine("despues de MensajeFinal y antes de if");
             // 6️⃣ Comprobar firma antes de mostrar el mensaje
             if (Emisor.ComprobarFirma(Firma, MensajeDescifrado))
             {
