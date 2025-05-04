@@ -58,8 +58,9 @@ namespace SimuladorEnvioRecepcion
             Firma = Emisor.FirmarMensaje(TextoAEnviar_Bytes);
 
             // 2️⃣ Cifrar mensaje con clave simétrica
-            //TextoCifrado = ClaveSimetricaEmisor.CifrarMensaje(TextoAEnviar_Bytes); // ----------------------------------------------------------
-            TextoCifrado = ClaveSimetricaEmisor.CifrarMensaje(BytesToStringHex(TextoAEnviar_Bytes));
+            //TextoCifrado = ClaveSimetricaEmisor.CifrarMensaje(TextoAEnviar_Bytes); // línea original
+            //TextoCifrado = ClaveSimetricaEmisor.CifrarMensaje(BytesToStringHex(TextoAEnviar_Bytes)); // 1ª línea de pruebas
+            TextoCifrado = ClaveSimetricaEmisor.CifrarMensaje(TextoAEnviar); // XXXX 2ª línea de pruebas
 
             // 3️⃣ Cifrar clave simétrica con criptografía asimétrica
             ClaveSimetricaKeyCifrada = Emisor.CifrarMensaje(ClaveSimetricaEmisor.Key);
@@ -67,43 +68,55 @@ namespace SimuladorEnvioRecepcion
 
             // Datos enviados al receptor
             Console.WriteLine("Firma: {0}", BytesToStringHex(Firma));
-            Console.WriteLine(""); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar 
+            Console.WriteLine(""); // borrar 
             Console.WriteLine("Texto cifrado: {0}", BytesToStringHex(TextoCifrado));
-            Console.WriteLine(""); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
+            Console.WriteLine(""); // borrar
             Console.WriteLine("Clave simétrica cifrada (Key): {0}", BytesToStringHex(ClaveSimetricaKeyCifrada));
-            Console.WriteLine(""); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
+            Console.WriteLine(""); // borrar
             Console.WriteLine("Clave simétrica cifrada (IV): {0}", BytesToStringHex(ClaveSimetricaIVCifrada));
-            Console.WriteLine(""); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
+            Console.WriteLine(""); // borrar
 
             // LADO RECEPTOR
             Console.WriteLine("\n📥 **Recepción del mensaje cifrado y proceso de descifrado**");
 
             // 4️⃣ Descifrar clave simétrica
-            Console.WriteLine("antes de key"); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
-            //ClaveSimetricaReceptor.Key = Receptor.DescifrarMensaje(ClaveSimetricaKeyCifrada); // ----------------------------------------------------------
+            Console.WriteLine("antes de key"); // borrar
+            //ClaveSimetricaReceptor.Key = Receptor.DescifrarMensaje(ClaveSimetricaKeyCifrada); // línea original
             ClaveSimetricaReceptor.Key = Emisor.DescifrarMensaje(ClaveSimetricaKeyCifrada);
-            Console.WriteLine(""); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
+            Console.WriteLine(""); // borrar
             Console.WriteLine("Clave simétrica descifrada (Key): {0}", ClaveSimetricaReceptor.Key);
-            Console.WriteLine(""); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
-            Console.WriteLine("despues de key y antes de IV"); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
-            //ClaveSimetricaReceptor.IV = Receptor.DescifrarMensaje(ClaveSimetricaIVCifrada); // ----------------------------------------------------------
+            Console.WriteLine("Clave simétrica descifrada (Key): {0}", BytesToStringHex(ClaveSimetricaReceptor.Key)); // borrar
+            Console.WriteLine(""); // borrar
+            Console.WriteLine("despues de key y antes de IV"); // borrar
+            //ClaveSimetricaReceptor.IV = Receptor.DescifrarMensaje(ClaveSimetricaIVCifrada); // línea original
             ClaveSimetricaReceptor.IV = Emisor.DescifrarMensaje(ClaveSimetricaIVCifrada);
-            Console.WriteLine(""); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
+            Console.WriteLine(""); // borrar
             Console.WriteLine("Clave simétrica descifrada (IV): {0}", ClaveSimetricaReceptor.IV);
-            Console.WriteLine(""); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
-            Console.WriteLine("despues de IV"); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
-            Console.WriteLine(""); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
+            Console.WriteLine("Clave simétrica descifrada (IV): {0}", BytesToStringHex(ClaveSimetricaReceptor.IV)); // borrar
+            Console.WriteLine(""); // borrar
+            Console.WriteLine("despues de IV"); // borrar
+            Console.WriteLine(""); // borrar
 
             // 5️⃣ Descifrar mensaje
-            //byte[] MensajeDescifrado = ClaveSimetricaReceptor.DescifrarMensaje(TextoCifrado); // ----------------------------------------------------------
-            Console.WriteLine("antes de byte MensajeDescifrado"); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
+            //byte[] MensajeDescifrado = ClaveSimetricaReceptor.DescifrarMensaje(TextoCifrado); // línea original
+            Console.WriteLine("antes de byte MensajeDescifrado"); // borrar
             byte[] MensajeDescifrado = Encoding.UTF8.GetBytes(ClaveSimetricaReceptor.DescifrarMensaje(TextoCifrado));
-            Console.WriteLine("despues de de byte MensajeDescifrado y antes de MensajeFinal"); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
-            string MensajeFinal = Encoding.UTF8.GetString(MensajeDescifrado);
-            Console.WriteLine("despues de MensajeFinal y antes de if"); // borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar borrar
+            Console.WriteLine("despues de de byte MensajeDescifrado y antes de MensajeFinal"); // borrar
+            //string MensajeFinal = Encoding.UTF8.GetString(MensajeDescifrado); // XXXX 2ª línea de pruebas
+            string MensajeFinal = ClaveSimetricaReceptor.DescifrarMensaje(TextoCifrado);
+            Console.WriteLine("despues de MensajeFinal y antes de if"); // borrar
+
+            Console.WriteLine(""); // borrar 
+            Console.WriteLine("Mensaje original: {0}", BytesToStringHex(TextoAEnviar_Bytes)); // borrar 
+            Console.WriteLine(""); // borrar
+            Console.WriteLine("Mensaje descifrado: {0}", BytesToStringHex(MensajeDescifrado)); // borrar
+            Console.WriteLine(""); // borrar
+            Console.WriteLine("MensajeFinal: ", MensajeFinal); // borrar 
+            Console.WriteLine(""); // borrar 
 
             // 6️⃣ Comprobar firma antes de mostrar el mensaje
-            if (Emisor.ComprobarFirma(Firma, MensajeDescifrado))
+            if (Emisor.ComprobarFirma(Firma, MensajeDescifrado)) // línea original
+            if (Emisor.ComprobarFirma(Firma, Encoding.UTF8.GetBytes(MensajeFinal))) // XXXX 2ª línea de pruebas
             {
                 Console.WriteLine("\n✅ **Firma verificada con éxito. Mostrando mensaje descifrado:**");
                 Console.WriteLine(MensajeFinal);
